@@ -1,0 +1,13 @@
+h1 Formulario de envío de imagen
+
+div 
+    form(action="/upload", method="post", enctype="multipart/form-data")
+        label Imagen 
+        input(type="file", name="imagen")
+        input(type="submit", value="Enviar")
+
+div 
+    form(action="/uploadmult", method="post", enctype="multipart/form-data")
+        label Imagenes
+        input(type="file", name="imagenes", multiple)
+        input(type="submit", value="Enviar")
